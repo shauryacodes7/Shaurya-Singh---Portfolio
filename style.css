@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-orange: #e84949;
+  --clr-light-gray: #e7e7e7;
+  --clr-blue: #4e45d5;
+  --clr-dark-blue: #343d68;
+  --color-1: rgb(231, 231, 231);
+  --color-2: #ffffff;
+  --color-3: #f98d00;
+  --color-4: #e83611;
+  --color-5: #f1b211;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0, auto;
+}
+/* NvaBar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 90px;
+}
+
+.logo-text {
+  margin-left: -1.6rem;
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.nav-items div {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-items div a {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-items div:hover {
+  font-weight: bold;
+  transition: all 0.8s;
+}
+/* Hero Section */
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  padding-bottom: 8rem;
+}
+
+.faded-text {
+  user-select: none;
+  font-size: 5em;
+  color: rgb(231, 231, 231);
+  bottom: 4.5%;
+  left: 0%;
+  font-weight: bold;
+  transition: all 3s;
+  /* background: linear-gradient(to bottom, rgb(231, 231, 231) 50%, #FFFFFF 50%);
+  -webkit-background-clip: text;
+  color: transparent; */
+  color: transparent;
+  background: linear-gradient(
+    180deg,
+    var(--color-1) 60%,
+
+    var(--color-2) 20%,
+    var(--color-2) 39%,
+
+    var(--color-2) 40%,
+    var(--color-2) 59%,
+
+    var(--color-2) 60%,
+    var(--color-2) 19%,
+
+    var(--color-2) 80%
+  );
+  -webkit-background-clip: text;
+}
+/* Hero Section Left */
+.hero-section-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.hero-section-heading {
+  font-size: 35px;
+  color: #343d68;
+  font-weight: 500;
+}
+
+.role {
+  color: #4e45d5;
+  font-weight: 800;
+}
+
+.hero-section-sub-heading {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.hero-section-desription {
+  margin-top: 1rem;
+  width: 70%;
+  font-weight: 500;
+}
+
+.btn {
+  width: fit-content;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--clr-white);
+  background-color: var(--clr-orange);
+  border: solid 3px transparent;
+  padding: 0.7rem 1.7rem;
+  box-shadow: 5px 5px 7px 0px #0000003f;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-white);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+}
+
+.btn:hover {
+  color: var(--clr-black);
+}
+
+.btn:hover::before {
+  transform: scaleX(100%);
+}
+/* Hero Section Right */
+.hero-section-right {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.user-image {
+  padding: 2.5rem;
+  filter: grayscale(1);
+  transition: all 1s;
+  animation: scaleImage 5s linear infinite;
+}
+
+.user-image img {
+  z-index: -9;
+}
+
+@keyframes scaleImage {
+  0% {
+    filter: grayscale(0);
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+    filter: grayscale(1);
+    box-shadow: 3px 3px 10px black;
+  }
+
+  100% {
+    transform: scale(1);
+    filter: grayscale(0);
+  }
+}
+
+.icon-dots {
+  z-index: 1;
+  bottom: -1rem;
+  right: 0;
+  animation-name: dotsAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dotsAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.icon-cube {
+  z-index: 1;
+  top: 0.8rem;
+  right: 1rem;
+  animation-name: cubeRotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cubeRotate {
+  0% {
+    transform: rotatey(0deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotatey(180deg) translatey(-12px);
+  }
+
+  100% {
+    transform: rotatey(0deg) translateY(0px);
+  }
+}
+
+.icon-circle {
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  animation-name: shakeEffect;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shakeEffect {
+  50% {
+    left: 5%;
+    bottom: 10%;
+  }
+}
+
+.icon-zigzag {
+  z-index: 1;
+  top: 1.5em;
+  left: 0.3em;
+  animation-name: zigzagAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zigzagAnimation {
+  50% {
+    left: 5%;
+    top: 2%;
+  }
+}
+
+.icon-plus {
+  z-index: 1;
+  top: -0.8rem;
+  left: 50%;
+  animation-name: shakeEffectPlus;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shakeEffectPlus {
+  50% {
+    top: 3%;
+    left: 48%;
+  }
+}
+
+/* Project-Section */
+
+.project-section {
+  background-color: rgb(231, 231, 231);
+}
