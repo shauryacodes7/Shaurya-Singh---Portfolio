@@ -326,7 +326,6 @@ a {
 }
 
 .project-section {
-  border: 2px solid red;
   background-color: rgb(231, 231, 231);
   margin-top: 4rem;
 }
@@ -338,13 +337,14 @@ a {
 }
 
 .project-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 0;
+  width: 100%;
+  margin: auto 0;
 
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
 }
 
 .project-card {
@@ -425,11 +425,21 @@ a {
 }
 
 .project-content-left {
-  left: 10%;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .project-content-right {
-  right: 10%;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .project-skill {
@@ -447,7 +457,7 @@ a {
   line-height: 3rem;
 }
 
-.project-subheading {
+.project-sub-heading {
   width: 70%;
   font-size: 16px;
   font-style: italic;
@@ -487,7 +497,7 @@ a {
 }
 
 #project2 {
-  margin: 120px;
+  margin-left: 120px;
   background-image: url(/images/projects/Project2.png);
 }
 
@@ -524,8 +534,6 @@ a {
   }
 
   .hero-section {
-    border: 2px solid red;
-
     top: -70px;
     flex-direction: column;
     gap: 9rem;
