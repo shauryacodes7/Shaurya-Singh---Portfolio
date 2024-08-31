@@ -98,7 +98,7 @@ a {
   position: absolute;
   font-size: 5em;
   color: rgb(231, 231, 231);
-  bottom: -27%;
+  bottom: -25.5%;
   left: 0%;
   font-weight: bold;
   transition: all 3s;
@@ -541,7 +541,7 @@ a {
   .faded-text {
     font-size: 2em;
 
-    bottom: 18%;
+    bottom: 29.3%;
     left: 0%;
   }
 
@@ -559,7 +559,7 @@ a {
   .hero-section-right {
     scale: 0.6;
     position: relative;
-    bottom: 185px;
+    bottom: 200px;
   }
 
   .hero-section-heading {
@@ -593,6 +593,7 @@ a {
   }
 
   .user-image {
+
     padding: 1.8rem;
   }
   /* media query for project sections start here */
