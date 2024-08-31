@@ -964,97 +964,37 @@ footer {
   .skill-subheading p {
     margin: 15px 0;
   }
-
+  /* DONE */
   .skill-container-right {
-    display: flex;
-    flex-direction: column;
+    left: 100px;
+    bottom: 50px;
+    width: 80%;
     flex-wrap: wrap;
-    position: relative;
-    gap: 2rem;
-    justify-content: center;
+    gap: 1rem;
   }
 
   /* DONE */
   .skill-fade-text {
     position: absolute;
-    font-size: 7em;
-    top: 83.5%;
-  }
-
-  .blob-style {
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    top: 50%;
+    font-size: 8em;
+    top: -3%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    animation: blobAnimate 3s linear infinite;
     z-index: -1;
   }
-
-  @keyframes blobAnimate {
-    50% {
-      top: 54%;
-      left: 46%;
-    }
-  }
-
-  .skills-logo {
-    width: 80px;
-    height: 80px;
-    transition: all 0.5s;
-  }
-
-  .skills-logo:hover {
-    transform: scale(1.2);
-  }
-
-  .skill-container-right {
-    width: 50vw;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    gap: 2rem;
-    justify-content: center;
-  }
-
-  .skill-fade-text {
-    position: absolute;
-    font-size: 15em;
-    font-style: bold;
-    color: rgb(231, 231, 231);
-    top: 68.2%;
-    left: 0%;
-    user-select: none;
-  }
-
+  /* DONE */
   .blob-style {
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: blobAnimate 3s linear infinite;
-    z-index: -1;
+    right: 50%;
+    width: 150px;
   }
 
-  @keyframes blobAnimate {
-    50% {
-      top: 54%;
-      left: 46%;
-    }
-  }
-
+  /* DONE */
   .skills-logo {
-    width: 80px;
-    height: 80px;
-    transition: all 0.5s;
+    width: 25px;
+    height: 25px;
   }
-
+  /* DONE */
   .skills-logo:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
 }
