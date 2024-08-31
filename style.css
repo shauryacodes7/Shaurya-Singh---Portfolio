@@ -997,4 +997,53 @@ footer {
   .skills-logo:hover {
     transform: scale(1.5);
   }
+
+  /* DONE */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0rem;
+  }
+  /* DONE */
+  .contactus-heading {
+    font-size: 50px;
+  }
+  /* DONE */
+  .contactus-sub-heading {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /* DONE */
+  .formfield {
+    width: 90vw;
+    height: 45px;
+    padding: 0 1rem;
+    font-size: 12px;
+    margin: 15px;
+  }
+  /* DONE */
+  .formfield-textarea {
+    height: auto;
+    padding-top: 1rem;
+  }
+
+  /* DONE */
+  #submit-btn {
+    width: fit-content;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.7rem 0.8rem;
+    margin: 25px 0;
+  }
+
+  /* DONE */
+  .submit-icon {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+  }
 }
