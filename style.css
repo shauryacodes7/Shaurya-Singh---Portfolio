@@ -1046,4 +1046,34 @@ footer {
     padding: 0 0.5rem;
     font-size: 1rem;
   }
+
+  /* DONE */
+  footer {
+    padding: 0;
+  }
+  /* DONE */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 1.2rem;
+  }
+  /* DONE */
+  .footer-faded-text {
+    display: none;
+  }
+  /* DONE */
+  .link-container {
+    gap: 1rem;
+  }
+
+  /* DONE */
+  .icon-container {
+    display: flex;
+    gap: 1rem;
+  }
+  /* DONE */
+  .icon-ft {
+    font-size: 25px;
+  }
 }
