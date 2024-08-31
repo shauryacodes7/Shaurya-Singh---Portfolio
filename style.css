@@ -328,6 +328,7 @@ a {
 .project-section {
   background-color: rgb(231, 231, 231);
   margin-top: 4rem;
+  padding-bottom: 4rem;
 }
 .page-header {
   color: var(--clr-orange);
@@ -509,6 +510,94 @@ a {
   background-image: url(/images/projects/Project4.png);
 }
 
+/* SKILL CONATINER STARTS HERE */
+
+.skills-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  padding: 5rem;
+  margin: 1rem auto;
+  gap: 30px;
+}
+
+.skill-container-left {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-heading {
+  font-size: 50px;
+  font-style: bold;
+  color: var(--clr-orange);
+  line-height: 50px;
+}
+
+.caps {
+  font-size: 90px;
+  color: var(--clr-orange);
+}
+
+.skill-subheading {
+  margin-top: 1rem;
+  width: 85%;
+  text-align: justify;
+}
+
+.skill-subheading p {
+  margin: 15px 0;
+}
+
+.skill-container-right {
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill-fade-text {
+  position: absolute;
+  font-size: 15em;
+  font-style: bold;
+  color: rgb(231, 231, 231);
+  top: 67.8%;
+  left: 0%;
+  user-select: none;
+}
+
+.blob-style {
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: blobAnimate 3s linear infinite;
+  z-index: -1;
+}
+
+@keyframes blobAnimate {
+  50% {
+    top: 54%;
+    left: 46%;
+  }
+}
+
+.skills-logo {
+  width: 80px;
+  height: 80px;
+  transition: all 0.5s;
+}
+
+.skills-logo:hover {
+  transform: scale(1.2);
+}
+
+/* MEDIA QUERY STARTS HERE */
 @media (max-width: 430px) {
   .logo {
     width: 50px;
@@ -541,7 +630,7 @@ a {
   .faded-text {
     font-size: 2em;
 
-    bottom: 29.3%;
+    bottom: 24.7%;
     left: 0%;
   }
 
@@ -593,14 +682,14 @@ a {
   }
 
   .user-image {
-
     padding: 1.8rem;
   }
   /* media query for project sections start here */
 
   /* done */
   .project-section {
-    margin-top: -30px;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
   }
   /* done */
   .page-header {
