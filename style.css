@@ -350,7 +350,6 @@ a {
 .project-card {
   width: 90%;
   height: 550px;
-  background-image: url(/images/projects/Project2.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -517,7 +516,7 @@ a {
 
   .logo-text {
     margin-left: -0.9rem;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .nav-items {
@@ -595,5 +594,119 @@ a {
 
   .user-image {
     padding: 1.8rem;
+  }
+  /* media query for project sections start here */
+
+  /* done */
+  .project-section {
+    margin-top: -30px;
+  }
+  /* done */
+  .page-header {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  /* done */
+  .project-container {
+    margin: 20px 0;
+    gap: 30px;
+  }
+  /* done */
+  .project-card {
+    width: 90%;
+    height: 250px;
+  }
+
+  /* done */
+  .project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 0;
+    transform: scaleX(1);
+  }
+  /* done */
+  .project-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 1;
+  }
+  /* done */
+  .project-card:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* done */
+  .project-number {
+    font-size: 50px;
+  }
+
+  /* done */
+  .project-number-right {
+    right: 0px;
+    top: -10px;
+  }
+  /* done */
+  .project-number-left {
+    left: 0px;
+    top: -10px;
+  }
+
+  /* done */
+  .project-skill {
+    width: 15px;
+  }
+
+  /* done */
+  .project-skill-container {
+    width: 60%;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  /* done */
+  .project-heading {
+    font-size: 18px;
+    line-height: 1rem;
+  }
+  /* done */
+  .project-sub-heading {
+    font-size: 12px;
+  }
+  /* done */
+  .btn-grp {
+    gap: 0.5rem;
+  }
+
+  /* done */
+  .icon {
+    font-size: 15px;
+  }
+  /* done */
+  .btn-project {
+    padding: 0.3rem 0.7rem;
+
+    font-size: 0.5rem;
+  }
+
+  /* done */
+  #project2 {
+    margin-left: 0;
+  }
+
+  /* done */
+  #project4 {
+    margin-left: 0;
   }
 }
